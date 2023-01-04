@@ -46,23 +46,23 @@ function MyApp({ Component, pageProps }) {
             className={styles.sol_connect_wallet_button}
             onClick={connectWallet}
           >
-            Conectarse
+            Conectar mi Wallet
           </button>
         </div>
       )}
       <div>
         <main>
           <nav className="border-b p-6">
-            <p className="text-4xl font-bold">Platzi Movies</p>
+            <p className="text-4xl font-bold">Fruei Gifs BlockChain</p>
             <div className="flex mt-4">
               <Link href="/">
-                <a className="mr-4">Inicio</a>
+                <a className="mr-4">Todos los Gifs</a>
               </Link>
               <Link href="/add-movie">
-                <a className="mr-6">Agregar Películas</a>
+                <a className="mr-6">Agregar Gif</a>
               </Link>
               <Link href="/my-movies">
-                <a className="mr-6">Mis Películas</a>
+                <a className="mr-6">Mis Gifs</a>
               </Link>
             </div>
           </nav>

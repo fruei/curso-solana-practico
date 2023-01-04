@@ -31,12 +31,9 @@ export default function Home() {
     try {
       const provider = getProvider();
       const program = new Program(IDL, programID, provider);
-      const getAllMovies = await program.account.movieGif.all();
-      const _mFilter = getAllMovies.filter((movie) => movie.account.owner.toBytes().join() === provider.wallet.publicKey.toBytes().join());
-  
-      setMovies(_mFilter);  
+      const getAllMovies = await program.account.movieGif.all();  
+      setMovies(getAllMovies);  
     } catch (error) {
-      console.log("Error in getGifList: ", error);
       setMovies(null);
     }
   };
