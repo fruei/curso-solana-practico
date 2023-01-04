@@ -38,7 +38,7 @@ export default function MyMovies() {
           movie.account.owner.toBytes().join() ===
           provider.wallet.publicKey.toBytes().join()
       );
-      setMovies(getAllMovies);
+      setMovies(_mFilter);
     } catch (error) {
       setMovies(null);
     }
